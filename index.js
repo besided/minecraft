@@ -24,22 +24,6 @@ client.on("message", message => {
         'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d44e8e4c-db34-4361-8508-e7288d4cc10f/d5ddfwi-62008409-a563-4539-a36e-f14985be44b1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDQ0ZThlNGMtZGIzNC00MzYxLTg1MDgtZTcyODhkNGNjMTBmXC9kNWRkZndpLTYyMDA4NDA5LWE1NjMtNDUzOS1hMzZlLWYxNDk4NWJlNDRiMS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.s-GIoyNx-F5_75hyzzKodS7_BbTWH0FG2yU5zubB50E',
         ]
 
-    let member = message.mentions.users.first() || message.author
-
-    let avatar = member.displayAvatarURL({ format: 'png', dynamic: true });
-    
-    if (message.author.bot) return false;
-
-    if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
-
-    if (message.mentions.has(client.user.id)) {
-    const embed = new Discord.MessageEmbed()
-        .setDescription(`Current Prefix: \`${prefix}\``)
-        .setThumbnail(gifs[Math.floor(Math.random() * gifs.length)])
-		.setAuthor(`${member.username}`, (avatar))
-    message.channel.send(embed);
-    };
-});
 
 // Mentioning the word Saint
 client.on('message', async message => {
