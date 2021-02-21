@@ -27,6 +27,7 @@ module.exports = {
                 {name: 'Online Players:', value: response.onlinePlayers},
                 {name: 'Max Players:', value: response.maxPlayers},
                 {name: 'Version:', value: response.version}
+                {name: 'Mod Pack:', value: FTB: Revelation}
             )
             .setFooter(`Requested by: ${member.username}`, (avatar))
  
