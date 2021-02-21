@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 // Importing Files
 const config = require('./config.json');
-const bot_token = require('./token.json');
+/// const bot_token = require('./token.json');
 
 // Config Prefix and Version
 const prefix = config.PREFIX
