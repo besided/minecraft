@@ -73,4 +73,4 @@ client.on("guildCreate", guild => {
  });
 
 // Client Login
-client.login(bot_token.TOKEN);
+client.login(process.env.TOKEN);
