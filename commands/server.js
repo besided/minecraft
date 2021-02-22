@@ -3,7 +3,7 @@ const util = require('minecraft-server-util');
 
 module.exports = {
     name: "server",
-    description: "Views all the commands for the Client",
+    description: "Views MC Server Information",
 
     async run (client, message, args) {
 
@@ -27,7 +27,7 @@ module.exports = {
                 {name: 'Online Players:', value: response.onlinePlayers},
                 {name: 'Max Players:', value: response.maxPlayers},
                 {name: 'Version:', value: response.version}
-                {name: 'Mod Pack:', value: FTB: Revelation}
+                {name: 'Modpack:', value: FTB: Revelation}
             )
             .setFooter(`Requested by: ${member.username}`, (avatar))
  

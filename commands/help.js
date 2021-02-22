@@ -22,6 +22,7 @@ module.exports = {
         .setThumbnail(gifs[Math.floor(Math.random() * gifs.length)])
         .addFields(
             { name: 'Server', value: '`View MC Server Information`' },
+            { name: 'Modpack', value: '`View Current Modpack`' },
             { name: 'Ping', value: '`View Client Ping`' },
             { name: 'Uptime', value: '`View Client Uptime`' },
             { name: 'Info', value: '`View Bot Information`' },
