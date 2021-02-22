@@ -26,16 +26,12 @@ module.exports = {
                 {name: 'Server IP:', value: response.host},
                 {name: 'Online Players:', value: response.onlinePlayers},
                 {name: 'Max Players:', value: response.maxPlayers},
-                {name: 'Version:', value: response.version}
-                {name: 'Modpack:', value: FTB: Revelation}
+                {name: 'Version:', value: response.version},
+                {name: 'Modpack:', value: 'FTB: Revelation'}
             )
             .setFooter(`Requested by: ${member.username}`, (avatar))
  
             message.channel.send(embed);
-        })
-        .catch ((error) =>{
-            message.channel.send('there was an error finding this server');
-            throw error;
         })
 
     }
