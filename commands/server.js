@@ -30,7 +30,6 @@ module.exports = {
                 {name: 'Modpack:', value: 'FTB: Revelation'}
             )
             .setFooter(`Requested by: ${member.username}`, (avatar))
- 
             message.channel.send(embed);
         })
 
