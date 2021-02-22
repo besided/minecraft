@@ -18,12 +18,11 @@ module.exports = {
         ]
     
         const embed = new Discord.MessageEmbed()
-            .setAuthor('Modpack', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d44e8e4c-db34-4361-8508-e7288d4cc10f/d58bi3u-a22617b1-4d41-45b8-b422-a09d7ff8f49c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDQ0ZThlNGMtZGIzNC00MzYxLTg1MDgtZTcyODhkNGNjMTBmXC9kNThiaTN1LWEyMjYxN2IxLTRkNDEtNDViOC1iNDIyLWEwOWQ3ZmY4ZjQ5Yy5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.mz_vgvm6wqQ21n8YbKIEtCp864UK-bgX8Qg3djXH6E4')
             .setTitle('Curse Forge: FTB Revelation')
             .setURL('https://www.youtube.com/watch?v=XIXMil6Ky2M')
-            .serDescription('Current Modpack: FTB Revelation! Click the Title to learn more!')
+            .setDescription('Current Modpack: FTB Revelation! Click the Title to learn more!')
             .setThumbnail(gifs[Math.floor(Math.random() * gifs.length)])
-        .setFooter(`Requested by: ${member.username}`, (avatar))
+            .setFooter(`Requested by: ${member.username}`, (avatar))
         
         message.channel.send(embed)
     }
